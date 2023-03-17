@@ -1,0 +1,17 @@
+﻿<Window x:Class="PRAKTIKA_1WPF.P"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRAKTIKA_1WPF"
+        mc:Ignorable="d"
+        Title="P" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="GridProd" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,271"/>
+        <TextBox x:Name="P_id" TextWrapping="Wrap" Text="TextBox" Margin="45,231,581,155"/>
+        <TextBox x:Name="Klient_id" TextWrapping="Wrap" Text="TextBox" Margin="288,231,338,155"/>
+        <Button x:Name="Creat_p_k" Content="Создать" Height="58" VerticalAlignment="Bottom" Margin="146,0,456,56" Click="Creat_p_k_Click"/>
+        <Button x:Name="close" Content="Закрыть" Margin="520,302,136,85" Click="close_Click"/>
+
+    </Grid>
+</Window>
